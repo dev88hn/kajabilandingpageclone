@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background-color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 220px;
+  height: 400px;
+  background-color: white;
+}
+
+.content-container {
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.top-container {
+  text-align: center;
+}
+
+.top-container > img {
+  margin-bottom: 25px;
+}
+
+.top-container > p {
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+input[type="password"],
+input[type="email"] {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 8px;
+  width: 100%;
+  padding: 5px 5px;
+}
+
+.logo {
+  width: 30%;
+}
+
+.check-ctr {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.check-ctr > input {
+  transform: scale(0.6);
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #2c91fc;
+  border-radius: 3px;
+  border: none;
+  padding: 4px 0;
+  font-size: 6px 0;
+  color: #fff;
+}
+
+.pw-forgot {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.pw-forgot > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2c91fc;
+}
+
+a:hover {
+  color: purple;
+}
+
+@media screen and (min-width: 760px) {
+  .container {
+    box-shadow: 5px 3px 20px -3px #999999;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 440px;
+    display: flex;
+  }
+
+  .content-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .image-container {
+    width: 50%;
+    height: 100%;
+    background: url("worker.jpg");
+    background-size: 100%;
+  }
+}
